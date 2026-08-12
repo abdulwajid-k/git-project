@@ -5,7 +5,7 @@ pipeline{
             steps{
                 deleteDir()
                 sh '''
-                git clone https://github.com/abdulwajid-k/git-project.git
+                git clone https://github.com/Shibil-Basith/website-sample.git
                 '''
             }
         }
@@ -13,7 +13,7 @@ pipeline{
             steps{
                 sh '''
                     rm -rf /var/www/html/*
-                    cp -r git-project/* /var/www/html/
+                    cp -r website-sample/* /var/www/html/
                     '''
             }
         }
